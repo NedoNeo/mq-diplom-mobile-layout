@@ -11,10 +11,12 @@
 <body>
 <!-- partial:index.partial.html -->
 
-<div class="pop-up">
+<div class="pop-up visually-hidden">
   <form action="#" class="pop-up-form">
-    <button type="button" class="close-button"></button>
-    <h1 class="pop-up-title">Ваш ФИДБЕк</h1>
+    <button type="button" class="close-button">
+      <span class="visually-hidden">кнопка "закрыть"</span>
+    </button>
+    <h2 class="pop-up-title">Ваш ФИДБЕк</h2>
     <label class="frequency-title form-titles">Как часто вы заходите на сайт?</label>
     <select name="frequency of visits" id="frequency" class="select-form">
       <option value="everyday" class="frequency-value" selected>Почти каждый день</option>
@@ -80,7 +82,9 @@
           <a href="#" class="link">INTERIOR</a>
         </li>
       </ul>
-      <h3 class="title trends-article-title hover-color">Сейчас в тренде: сад  на подоконнике</h3>
+      <h3>
+        <a href="#" class="title trends-article-title hover-color">Сейчас в тренде: сад  на подоконнике</a>
+      </h3>
       </div>
     </article>
     <article class="trends-article">
@@ -90,7 +94,9 @@
             <a href="#" class="link">food</a>
           </li>
         </ul>
-        <h3 class="title trends-article-title hover-color">сыры на красивых  картинках из интернета: какие они на вкус?</h3>
+        <h3>
+          <a href="#" class="title trends-article-title hover-color">сыры на красивых  картинках из интернета: какие они на вкус?</a>
+        </h3>
       </div>
     </article>
     <article class="trends-article">
@@ -103,7 +109,9 @@
             <a href="#" class="link">tRAVEL</a>
           </li>
         </ul>
-        <h3 class="title trends-article-title hover-color">СОБИРАЕМСЯ В ПЕРВЫЙ ПОХОД В ГОРЫ</h3>
+        <h3>
+          <a href="#" class="title trends-article-title hover-color">СОБИРАЕМСЯ В ПЕРВЫЙ ПОХОД В ГОРЫ</a>
+        </h3>
       </div>
     </article>
     <article class="trends-article">
@@ -116,7 +124,9 @@
             <a href="#" class="link">health</a>
           </li>
         </ul>
-        <h3 class="title trends-article-title hover-color">Сейчас в тренде: сКОЛЬКО ВИТАМИНА c В ЛИМОНАХ?</h3>
+        <h3>
+          <a href="#" class="title trends-article-title hover-color">Сейчас в тренде: сКОЛЬКО ВИТАМИНА c В ЛИМОНАХ?</a>
+        </h3>
       </div>
     </article>
   </div>
@@ -327,7 +337,7 @@
           <span class="visually-hidden">поле воода вашего email адресса</span>
         </label>
         <button type="submit" class="email-botton">
-          <span class="visually-hidden">кнопка подписаться на рассылку</span>
+          <!-- <span class="visually-hidden">кнопка подписаться на рассылку</span> -->
           подписаться
         </button>
       </form>
@@ -439,8 +449,8 @@
         <p class="text shop-text">Набор из двух подушек с модными принтами. Видео о создании <a class="shop-link">здесь</a></p>
         <div class="price-container">
           <p class="price price-text">
-            <span class="old-price">1000 <span class="old-rub rub">р</span></span>
-            <span class="new-price">800 <span class="new-rub rub">р</span></span>
+            <span class="old-price">1000 ₽</span>
+            <span class="new-price">800 ₽</span>
           </p>
           <button class="shop-button price-text">в магазин</button>
         </div>
@@ -457,7 +467,7 @@
         <p class="text shop-text">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a class="shop-link">весенняя серия постов</a> в блоге и несколько подкастов.</p>
         <div class="price-container">
           <p class="price price-text">
-            <span class="new-price">3500<span class="new-rub rub">р</span></span>
+            <span class="new-price">3500 ₽</span>
           </p>
           <button class="shop-button price-text">в магазин</button>
         </div>
@@ -474,8 +484,8 @@
         <p class="text shop-text">Необычная рамка для украшения дома из видео <a class="shop-link">«Как сделать рамку из подручных средств за 30 минут»</a></p>
         <div class="price-container">
           <p class="price price-text">
-            <span class="old-price">500<span class="old-rub rub">р</span></span>
-            <span class="new-price">400<span class="new-rub rub">р</span></span>
+            <span class="old-price">500 ₽</span>
+            <span class="new-price">400 ₽</span>
           </p>
           <button class="shop-button price-text">в магазин</button>
         </div>
@@ -508,11 +518,9 @@
       </ul>
     </address>
     <div class="footer-div margin-div">
-      <div class="copy-div">
-        <a href="#" class="copy-footer">
-          <p class="footer-text">Copyright © 2009–2019 City Blog LLC.</p>
-        </a>
-      </div>
+      <a href="#" class="copy-footer footer-text">
+          Copyright © 2009–2019 City Blog LLC.
+      </a>
     </div>
   </footer>
 </div>
