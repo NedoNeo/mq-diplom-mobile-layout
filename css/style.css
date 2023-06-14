@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
   list-style-type: none;
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -42,7 +43,7 @@ body {
 
 .pop-up-form {
   width: 392px;
-  min-height: 589px;
+  /* min-height: 589px; */
 
   /* margin-left: auto;
   margin-right: auto;
@@ -391,7 +392,7 @@ body {
 }
 
 .trends-article-container {
-  min-height: 146px;
+  /* min-height: 146px; */
   box-sizing: border-box;
   padding: 37px 33px;
 
@@ -536,6 +537,7 @@ body {
 
 /*БОКОВАЯ ПАНЕЛЬ*/
 .side-content {
+  min-width: 272px;
   width: 272px;
 } 
 
@@ -605,11 +607,11 @@ body {
 .search-form {
   margin-top: 56px;
   position: relative;
-  width: 270px;
+  /* width: 270px; */
 } 
 
 .search {
-  width: 270px;
+  width: 100%;
   opacity: 0.541;
   font-size: 13px;
   color: #000000;
@@ -1178,7 +1180,7 @@ body {
   }
 
   .trends-article-container {
-    min-height: 134px;
+    /* min-height: 134px; */
     padding: 32px 33px;
   }
 
@@ -1325,12 +1327,12 @@ body {
   .pop-up-form {
     width: 100%;
     margin-top: 0;
-    top: 6%;
+    /* top: 6%; */
 
-    min-height: 545px;
+    /* min-height: 545px; */
     padding-left: 23px;
     padding-right: 20px;
-    padding-bottom: 16px;
+    padding-bottom: 30px;
   }
 
   .pop-up-title {
@@ -1440,7 +1442,7 @@ body {
   }
 
   .trends-article-container {
-    min-height: 120px;
+    /* min-height: 120px; */
 
     padding: 27px 30px 22px 18px;
   }
@@ -1570,6 +1572,11 @@ body {
   /* МАГАЗИН */
   .shop-img {
     width: 282px;
+  }
+
+  .border-container {
+
+    width: 100%;
   }
 
   .shop-text {
